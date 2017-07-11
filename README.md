@@ -2,7 +2,7 @@
 
 An algorithm that finds the length of the longest path starting from vertex 0 in a DAG, done for an Algorithms and Data structures paper.
 
-##Algorithm:
+## Algorithm:
 
 First: Find a topological ordering of the given DAG.
 Then: For each vertex v of the DAG, in the topological ordering, compute the length of the longest path ending at v by looking at its incoming neighbors and adding one to the maximum length recorded for those neighbors. If v has no incoming neighbors, set the length of the longest path ending at v to zero. In either case, record this number so that later steps of the algorithm can access it.
